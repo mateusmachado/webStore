@@ -65,12 +65,13 @@
 				<span class="sr-only">Next</span>
 			</a>
 		</div>
+
 		<!-- Tab panes -->
 		<div class="tab-content">
 			<div class="tab-pane active">
 				<br />
 				<p>
-					<button type="button" class="btn btn-primary">
+					<button id="btnCreate" type="button" class="btn btn-primary">
 						<span class="glyphicon glyphicon-plus"></span>
 					</button>
 				</p>
@@ -136,6 +137,7 @@
 				</tbody>
 			</table>
 		</div>
+		<!-- END Tab panes -->
 		<ul class="pagination">
 			<li class="disabled"><a href="#">&laquo;</a></li>
 			<li class="active"><a href="#">1</a></li>
@@ -144,6 +146,63 @@
 			<li><a href="#">4</a></li>
 			<li><a href="#">&raquo;</a></li>
 		</ul>
+
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" role="dialog">
+			<div class="modal-dialog">
+
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header" style="padding: 35px 50px;">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4>
+							<span class="glyphicon glyphicon-leaf"></span> Add new product
+						</h4>
+					</div>
+					<div class="modal-body" style="padding: 40px 50px;">
+						<form role="form">
+							<div class="form-group">
+								<label for="name"> Name</label> <input type="text"
+									class="form-control" id="name" placeholder="Enter name">
+							</div>
+							<div class="form-group">
+								<label for="price"> Price</label> <input type="number"
+									class="form-control" id="price" placeholder="Enter price">
+							</div>
+							<div class="form-group">
+								<label for="color"> Color</label> <input type="text"
+									class="form-control" id="color" placeholder="Enter color">
+							</div>
+							<div class="form-group">
+								<label for="quantity"> Quantity</label> <input type="number"
+									class="form-control" id="quantity" placeholder="Enter quantity">
+							</div>
+							<div class="form-group">
+								<label for="weight"> Weight</label> <input type="text"
+									class="form-control" id="weight" placeholder="Enter weight">
+							</div>
+							<!-- <div class="form-group">
+								<label for="psw"><span
+									class="glyphicon glyphicon-eye-open"></span> Password</label> <input
+									type="text" class="form-control" id="psw"
+									placeholder="Enter password">
+							</div> -->
+							<button type="submit" class="btn btn-success ">
+								<span class="glyphicon glyphicon-ok"></span>
+							</button>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="submit" class="btn btn-danger btn-default pull-left"
+							data-dismiss="modal">
+							<span class="glyphicon glyphicon-remove"></span> Cancel
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END Modal -->
+
 	</div>
 </body>
 </html>
